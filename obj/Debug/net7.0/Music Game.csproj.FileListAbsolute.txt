@@ -1,0 +1,31 @@
+C:\Users\Jonathan\source\repos\Music Game\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Jonathan\source\repos\Music Game\bin\Debug\net7.0\appsettings.json
+C:\Users\Jonathan\source\repos\Music Game\bin\Debug\net7.0\Music Game.staticwebassets.runtime.json
+C:\Users\Jonathan\source\repos\Music Game\bin\Debug\net7.0\Music Game.exe
+C:\Users\Jonathan\source\repos\Music Game\bin\Debug\net7.0\Music Game.deps.json
+C:\Users\Jonathan\source\repos\Music Game\bin\Debug\net7.0\Music Game.runtimeconfig.json
+C:\Users\Jonathan\source\repos\Music Game\bin\Debug\net7.0\Music Game.dll
+C:\Users\Jonathan\source\repos\Music Game\bin\Debug\net7.0\Music Game.pdb
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.csproj.AssemblyReference.cache
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.AssemblyInfoInputs.cache
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.AssemblyInfo.cs
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.RazorAssemblyInfo.cache
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.RazorAssemblyInfo.cs
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\staticwebassets\msbuild.Music Game.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\staticwebassets\msbuild.build.Music Game.props
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Music Game.props
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Music Game.props
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\scopedcss\bundle\Music Game.styles.css
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.dll
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\refint\Music Game.dll
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.pdb
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\Music Game.genruntimeconfig.cache
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\ref\Music Game.dll
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Jonathan\source\repos\Music Game\obj\Debug\net7.0\scopedcss\projectbundle\Music Game.bundle.scp.css

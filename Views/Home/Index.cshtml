@@ -1,0 +1,116 @@
+﻿<style>
+    .hidden {
+        display: none;
+    }
+</style>
+<script type="text/javascript">
+
+    var stop = false;
+    var timeLeft;
+
+    function startTimer() {
+        var timeLeft = document.getElementById("roundTime").value;
+        stop = false;
+        var x = setInterval(function () {
+            var minutes = Math.floor(timeLeft / 60);
+            var seconds = timeLeft % 60;
+            var stopwatch = document.getElementById("stopwatch");
+            var timeText;
+
+            console.warn(minutes);
+            console.warn(seconds);
+            if(seconds == 0) {
+                seconds = "00";
+            }
+            
+            if(minutes > 0) {
+                if(seconds < 10 && seconds != 0) {
+                    seconds = '0' + seconds;
+                }
+                timeText = minutes + ":" + seconds;
+            } 
+            else {
+                timeText = seconds;
+            }
+                
+            if (timeLeft == 0) {
+                stopwatch.innerText = 'Time\'s up!';
+                clearInterval(x);
+            }
+            if (stop) {
+                stopwatch.innerText = 'Timer stopped!'
+                clearInterval(x);
+            }
+            if(timeLeft > 0 && !stop) {
+                stopwatch.innerText = timeText;
+                timeLeft--;
+            }
+        }, 1000);
+    }
+
+    function stopTimer() {
+        stop = true;
+    }
+    
+    function getClueList() {
+        var clues;
+        var clueCount = document.getElementById("numClues").value;
+        var elm = document.getElementById("clues");
+        elm.innerHTML = "";
+        
+        $.ajax({
+            url: '/GetClues?length=' + clueCount,
+            type: "POST",
+            success: function(data) {
+                console.warn(data);
+                clues = data;
+
+                let i = 0;
+                while (i < clues.length) {
+                    var node = document.createElement("div");
+                    var newChild = document.createTextNode(clues[i]);
+                    node.appendChild(newChild);
+
+                    if (i > 0) {
+                        node.classList.add("hidden");
+                    }
+
+                    elm.appendChild(node);
+                    i++;
+                }
+            },
+            error: function(error) {
+                alert(error);
+                return null;
+            }
+        })
+    }
+
+    function showNextClue() {
+        var elm = document.getElementsByClassName("hidden")[0];
+        elm.classList.remove("hidden");
+    }
+</script>
+
+<div class="text-center">
+    <label for="numClues"># of Clues</label>
+    <input id="numClues" />
+</div>
+<div class="text-center">
+    <label for="roundTime">Round Time</label>
+    <input id="roundTime" />
+</div>
+<div class="text-center">
+    <label class="fs-1 text-dark" id="stopwatch">0:00</label>
+</div>
+<div class="text-center">
+    <input id="startTimer" type="button" value="Start" onclick="startTimer()" />
+    <input id="stopTimer" type="button" value="Stop" onclick="stopTimer()" />
+</div>
+
+<div class ="text-center">
+    <input id="getClues" type="button" value="Get Clues" onclick="getClueList()" />
+    <input id="nextClue" type="button" value="Show Next" onclick="showNextClue()" />
+</div>
+
+<div id="clues" class="text-center"></div>
